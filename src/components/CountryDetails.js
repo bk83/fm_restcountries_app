@@ -25,7 +25,7 @@ export default function CountryDetails({ countries }) {
 
   if (!detail) {
 
-    navigate('/pageNotFound');
+    navigate('/');
 
   } else {
 

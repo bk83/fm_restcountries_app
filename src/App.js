@@ -3,7 +3,6 @@ import Header from './components/Header';
 import SearchFilter from './components/SearchFilter';
 import CountryList from './components/CountryList';
 import CountryDetails from './components/CountryDetails';
-import PageNotFound from './components/PageNotFound';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -33,27 +32,30 @@ const App = () => {
     setSelectedRegion(region);
   };
 
+  const home = (
+    <>
+      <SearchFilter
+        searchQuery={searchQuery}
+        selectedRegion={selectedRegion}
+        handleSearchChange={handleSearchChange}
+        handleRegionChange={handleRegionChange}
+      />
+      <CountryList
+        countries={countries}
+        searchQuery={searchQuery}
+        selectedRegion={selectedRegion}
+      />
+    </>
+  );
+  
+
 
   return (
     <div>
       <Header />
         <Routes>
           <Route path='/'
-                 element={
-                          <>
-                            <SearchFilter
-                              searchQuery={searchQuery}
-                              selectedRegion={selectedRegion}
-                              handleSearchChange={handleSearchChange}
-                              handleRegionChange={handleRegionChange}
-                            />
-                            <CountryList
-                              countries={countries}
-                              searchQuery={searchQuery}
-                              selectedRegion={selectedRegion}
-                            />
-                         </>
-                        }
+                 element={home}
           />
           <Route path='/:selectedCountry'
                  element={
@@ -61,10 +63,8 @@ const App = () => {
                           countries={countries}
                         />}
           />
-          <Route path='/pageNotFound'
-                element={
-                        <PageNotFound/>
-                        }
+          <Route path='/*'
+                element={home}
           />
         </Routes>
         

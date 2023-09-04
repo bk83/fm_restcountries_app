@@ -482,7 +482,8 @@ input[type=text] {
   background-color: #f0f0f0;
 }
 
-.not-found-msg {
+/* styling for page not found page */
+/* .not-found-msg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -498,4 +499,4 @@ input[type=text] {
   border-radius: 5px;
   margin-top: 20px;
   width: auto;
-}
+} */

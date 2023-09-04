@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fm_restcountries_app/static/css/main.4e9e683c.css",
-    "main.js": "/fm_restcountries_app/static/js/main.9cc26597.js",
+    "main.js": "/fm_restcountries_app/static/js/main.5f1bcd49.js",
     "index.html": "/fm_restcountries_app/index.html",
     "static/media/search-icon.svg": "/fm_restcountries_app/static/media/search-icon.410738549f6d28dbc418172672da84cd.svg",
     "static/media/search-icon-w.svg": "/fm_restcountries_app/static/media/search-icon-w.40ac63c8e10c1b0966ed447f1012c769.svg",
@@ -12,10 +12,10 @@
     "static/media/select-box-arrow.svg": "/fm_restcountries_app/static/media/select-box-arrow.61ced5b56b0835a9a4279ea6e8914697.svg",
     "static/media/select-box-arrow-w.svg": "/fm_restcountries_app/static/media/select-box-arrow-w.27b623ce867338dd354fc0faa011d088.svg",
     "main.4e9e683c.css.map": "/fm_restcountries_app/static/css/main.4e9e683c.css.map",
-    "main.9cc26597.js.map": "/fm_restcountries_app/static/js/main.9cc26597.js.map"
+    "main.5f1bcd49.js.map": "/fm_restcountries_app/static/js/main.5f1bcd49.js.map"
   },
   "entrypoints": [
     "static/css/main.4e9e683c.css",
-    "static/js/main.9cc26597.js"
+    "static/js/main.5f1bcd49.js"
   ]
 }

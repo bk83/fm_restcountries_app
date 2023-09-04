@@ -1,25 +1,76 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import Header from './components/Header';
+import SearchFilter from './components/SearchFilter';
+import CountryList from './components/CountryList';
+import CountryDetails from './components/CountryDetails';
+import PageNotFound from './components/PageNotFound';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function App() {
+const App = () => {
+  const [countries, setCountries] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedRegion, setSelectedRegion] = useState('All region');
+
+  const apiURL = 'https://restcountries.com/v3.1/all';
+  const param = 'name,tld,cca2,cca3,capital,subregion,region,population,nativeName,currencies,languages,flags,borders';
+
+  useEffect(() => {
+    fetch(`${apiURL}?fields=${param}`)
+      .then(response => response.json())
+      .then(data => {
+        setCountries(data);
+      })
+      .catch(error => {
+        console.error('Error fetching country data:', error);
+      });
+  }, []);
+
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const handleRegionChange = (region) => {
+    setSelectedRegion(region);
+  };
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+        <Routes>
+          <Route path='/'
+                 element={
+                          <>
+                            <SearchFilter
+                              searchQuery={searchQuery}
+                              selectedRegion={selectedRegion}
+                              handleSearchChange={handleSearchChange}
+                              handleRegionChange={handleRegionChange}
+                            />
+                            <CountryList
+                              countries={countries}
+                              searchQuery={searchQuery}
+                              selectedRegion={selectedRegion}
+                            />
+                         </>
+                        }
+          />
+          <Route path='/:selectedCountry'
+                 element={
+                          <CountryDetails
+                          countries={countries}
+                        />}
+          />
+          <Route path='/pageNotFound'
+                element={
+                        <PageNotFound/>
+                        }
+          />
+        </Routes>
+        
     </div>
   );
-}
+};
+
 
 export default App;

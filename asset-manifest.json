@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/fm_restcountries_app/static/css/main.4e9e683c.css",
-    "main.js": "/fm_restcountries_app/static/js/main.9cc26597.js",
-    "index.html": "/fm_restcountries_app/index.html",
-    "static/media/search-icon.svg": "/fm_restcountries_app/static/media/search-icon.410738549f6d28dbc418172672da84cd.svg",
-    "static/media/search-icon-w.svg": "/fm_restcountries_app/static/media/search-icon-w.40ac63c8e10c1b0966ed447f1012c769.svg",
-    "static/media/dark-mode-icon.svg": "/fm_restcountries_app/static/media/dark-mode-icon.02e5534a97c1d1a2b06a7fef06747e2a.svg",
-    "static/media/dark-mode-icon-w.svg": "/fm_restcountries_app/static/media/dark-mode-icon-w.33b91cd81bcac82725ede6c1ca389f7c.svg",
-    "static/media/back-icon.svg": "/fm_restcountries_app/static/media/back-icon.6bf80a930e96177c10cd58f6581c84cc.svg",
-    "static/media/back-icon-w.svg": "/fm_restcountries_app/static/media/back-icon-w.5ea73c5c002964a9e3291e56ec8d5f58.svg",
-    "static/media/select-box-arrow.svg": "/fm_restcountries_app/static/media/select-box-arrow.61ced5b56b0835a9a4279ea6e8914697.svg",
-    "static/media/select-box-arrow-w.svg": "/fm_restcountries_app/static/media/select-box-arrow-w.27b623ce867338dd354fc0faa011d088.svg",
-    "main.4e9e683c.css.map": "/fm_restcountries_app/static/css/main.4e9e683c.css.map",
-    "main.9cc26597.js.map": "/fm_restcountries_app/static/js/main.9cc26597.js.map"
+    "main.css": "./static/css/main.4e9e683c.css",
+    "main.js": "./static/js/main.9f965fec.js",
+    "static/media/search-icon.svg": "./static/media/search-icon.410738549f6d28dbc418172672da84cd.svg",
+    "static/media/search-icon-w.svg": "./static/media/search-icon-w.40ac63c8e10c1b0966ed447f1012c769.svg",
+    "index.html": "./index.html",
+    "static/media/dark-mode-icon.svg": "./static/media/dark-mode-icon.02e5534a97c1d1a2b06a7fef06747e2a.svg",
+    "static/media/dark-mode-icon-w.svg": "./static/media/dark-mode-icon-w.33b91cd81bcac82725ede6c1ca389f7c.svg",
+    "static/media/back-icon.svg": "./static/media/back-icon.6bf80a930e96177c10cd58f6581c84cc.svg",
+    "static/media/back-icon-w.svg": "./static/media/back-icon-w.5ea73c5c002964a9e3291e56ec8d5f58.svg",
+    "static/media/select-box-arrow.svg": "./static/media/select-box-arrow.61ced5b56b0835a9a4279ea6e8914697.svg",
+    "static/media/select-box-arrow-w.svg": "./static/media/select-box-arrow-w.27b623ce867338dd354fc0faa011d088.svg",
+    "main.4e9e683c.css.map": "./static/css/main.4e9e683c.css.map",
+    "main.9f965fec.js.map": "./static/js/main.9f965fec.js.map"
   },
   "entrypoints": [
     "static/css/main.4e9e683c.css",
-    "static/js/main.9cc26597.js"
+    "static/js/main.9f965fec.js"
   ]
 }

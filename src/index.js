@@ -4,15 +4,15 @@ import './index.css';
 import App from './App';
 import { DarkModeProvider } from './DarkModeContext';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <DarkModeProvider>
-      <BrowserRouter>
+      <HashRouter basename='/'>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </DarkModeProvider>
   </React.StrictMode>
 );
